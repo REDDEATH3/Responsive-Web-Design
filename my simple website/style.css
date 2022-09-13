@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@700 & family= Büyüleyici & family= IBM+Plex+Sans & family= Rubik+Iso & family= Smooch & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fascinate&family=IBM+Plex+Sans&family=Noto+Sans+Buhid&family=Rubik+Iso&family=Smooch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Smooch', cursive; */
+}
+
+
+body {
+    background-image: url(Misty-Mountains.jpg);
+    background-size: cover;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 100px;
+    border-bottom: 2px solid black;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
+header nav .logo a:hover {
+    color: red;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Smooch', cursive;
+    font-size: 30px;
+
+}
+
+nav .menu a:hover {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Smooch', cursive;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 32px;
+
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .news {
+    color: rgb(253, 4, 4);
+    text-decoration: none;
+    background-color: gray;
+    padding: 12px 24px;
+    border-radius: 10%;
+    column-gap: 48px;
+}
+
+/* section */
+.content {
+    color: black;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+
+}
+
+
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content p:hover{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Noto Sans Buhid', sans-serif;
+    font-family: 'Rubik Iso', cursive;
+    font-family: 'Smooch', cursive;
+    font-size: 40px;
+}
+
+.content .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .link :hover{
+    background-color: black;
+    color: red;
+}
+
+.content .link a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+
+}
+
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu .news {
+        display: none;
+    }
+    .content{
+        padding-top: 50px;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .content p{
+        font-size: 36px;
+
+    } 
+    .content .link{
+        flex-direction: column;
+    }
+
+    .content .link a{
+        padding: 14px;
+    }
+}
